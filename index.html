@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aanya Jain | Frontend Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: #fdf6e3; color: #3b3a30; }
+
+    a { text-decoration: none; color: inherit; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: #fff8e7; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: fixed; width: 100%; top: 0; z-index: 1000; }
+    header h1 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #556b2f; }
+    nav a { margin-left: 20px; font-weight: 500; color: #556b2f; transition: color 0.3s; }
+    nav a:hover { color: #8b8000; }
+
+    section { padding: 120px 50px 50px; max-width: 1100px; margin: auto; }
+    h2 { font-family: 'Playfair Display', serif; font-size: 2rem; color: #556b2f; margin-bottom: 30px; position: relative; display: inline-block; }
+    h2::after { content: ''; width: 50px; height: 3px; background: #8b8000; display: block; margin-top: 5px; }
+
+    /* Hero Section */
+    .hero { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; background: linear-gradient(135deg, #fff8e7, #f5f5dc); text-align: center; padding-top: 80px; }
+    .hero img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 4px solid #8b8000; margin-bottom: 20px; }
+    .hero h1 { font-size: 3rem; margin-bottom: 15px; color: #556b2f; }
+    .hero p { font-size: 1.2rem; max-width: 600px; color: #8b8000; }
+
+    .education-item, .experience-item, .project-item { background: #fff8e7; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 20px; transition: transform 0.3s; }
+    .education-item:hover, .experience-item:hover, .project-item:hover { transform: translateY(-5px); }
+    .education-item h3, .experience-item h3, .project-item h3 { color: #556b2f; margin-bottom: 5px; }
+    .education-item span, .experience-item span { float: right; font-style: italic; color: #8b8000; }
+    ul { margin-top: 10px; padding-left: 20px; }
+
+    .skills ul { display: flex; flex-wrap: wrap; gap: 15px; list-style: none; }
+    .skills li { background: #556b2f; color: #fff; padding: 10px 15px; border-radius: 5px; font-weight: 500; }
+
+    .projects .project-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 20px; }
+    .projects .project-item a { color: #8b8000; font-weight: 500; }
+
+    footer { background: #556b2f; color: #fff; text-align: center; padding: 30px 20px; margin-top: 50px; }
+    footer a { color: #ffd700; margin: 0 10px; transition: color 0.3s; }
+    footer a:hover { color: #f5deb3; }
+
+    #coding-profiles ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        list-style: none;
+        padding-left: 0;
+        margin-top: 10px;
+        }
+    #coding-profiles li a {
+        background: #556b2f;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-weight: 500;
+        transition: background 0.3s;
+    }
+    #coding-profiles li a:hover {
+        background: #8b8000;
+    }
+
+
+    @media(max-width: 768px){ header { flex-direction: column; text-align: center; } nav { margin-top: 10px; } }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <h1>Portfolio</h1>
+    <nav>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <img src="images/aanya.jpeg" alt="Aanya Jain">
+    <h1>Hi, I'm Aanya Jain</h1>
+    <p>Frontend Web Developer passionate about creating responsive, user-friendly websites using HTML, CSS, and JavaScript.</p>
+  </section>
+
+  <!-- Education -->
+  <section class="education" id="education">
+    <h2>Education</h2>
+    <div class="education-item">
+      <h3>Baderia Global Institute of Engineering and Management</h3>
+      <span>Jabalpur, M.P | Sep 2024 – 2028</span>
+      <p><em>B. Tech in CSE (Cybersecurity, IoT & Blockchain Technology)</em></p>
+    </div>
+    <div class="education-item">
+      <h3>Joy Senior Secondary School</h3>
+      <span>Jabalpur, M.P | Mar 2022 – May 2024</span>
+      <p><em>Physics, Chemistry, Mathematics</em></p>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="experience" id="experience">
+    <h2>Experience</h2>
+    <div class="experience-item">
+      <h3>Frontend Web Developer</h3>
+      <span>Remote | Academic / Self-Driven</span>
+      <ul>
+        <li>Designed and developed responsive websites using HTML, CSS, and basic JavaScript</li>
+        <li>Built multi-page websites with clean UI and user-friendly navigation</li>
+        <li>Integrated forms and improved styling using reusable CSS components</li>
+        <li>Implemented responsive layouts using Flexbox and Media Queries</li>
+        <li>Integrated Google Maps and external libraries for real-world functionality</li>
+        <li>Used GitHub for version control and project hosting</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-item">
+        <h3>Tax & ITR Services Website | HTML, CSS, JS</h3>
+        <ul>
+            <li>Developed a user-friendly ITR filing web application with responsive front-end design</li>
+            <li>Implemented guided form input, validation, and step-by-step tax filing workflow</li>
+            <li>Integrated secure data handling and seamless PDF generation for tax submissions</li>
+            <li>Structured code for maintainability and easy future feature enhancements</li>
+            <li>Links: <a href="https://tax-assist-xi.vercel.app/">Live Site</a> | <a href="https://github.com/aanya1407jain/TaxAssist.git">GitHub Repo</a></li>
+        </ul>
+      </div>
+      <div class="project-item">
+        <h3>Snake Game | JavaScript, HTML5 Canvas</h3>
+        <ul>
+            <li>Developed a responsive Snake Game using vanilla JavaScript and HTML5 Canvas</li>
+            <li>Implemented smooth movement, wall and self-collision detection, and real-time score tracking</li>
+            <li>Integrated pause/resume functionality and responsive keyboard controls for improved gameplay</li>
+            <li>Organized code for readability and easy future enhancements</li>
+            <li>Links: <a href="https://hungry-snake-five.vercel.app/" target="_blank">GitHub Repo</a> | <a href="https://github.com/aanya1407jain/hungry-snake.git" target="_blank">Live Site</a></li>
+        </ul>
+      </div>
+      <div class="project-item">
+        <h3>Chai Culture Website | HTML, CSS, JS</h3>
+        <ul>
+            <li>Built a modern e-commerce website for premium tea products with responsive design</li>
+            <li>Developed interactive product listings, shopping cart, and checkout functionality</li>
+            <li>Enhanced user experience with visually appealing UI elements and seamless navigation</li>
+            <li>Optimized front-end code for maintainability and future feature updates</li>
+            <li>Links: <a href="https://chai-culture-iota.vercel.app/" target="_blank">Live Site</a> | <a href="https://github.com/aanya1407jain/chai-culture.git" target="_blank">GitHub Repo</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript (ES6+)</li>
+        <li>Responsive Design</li>
+        <li>Flexbox & Grid</li>
+        <li>React.js (Basics)</li>
+        <li>Git & GitHub</li>
+        <li>DOM Manipulation</li>
+        <li>REST APIs</li>
+        <li>Debugging</li>
+        <li>Python</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>DSA</li>
+        <li>VS Code</li>
+        <li>MS Excel</li>
+    </ul>
+  </section>
+
+  <!-- Coding Profiles -->
+    <section id="coding-profiles">
+    <h2>Coding Profiles</h2>
+    <ul>
+        <li><a href="https://leetcode.com/u/AANYA1234/" target="_blank">LeetCode</a></li>
+        <li><a href="https://www.hackerrank.com/profile/aanya1407_jain" target="_blank">HackerRank</a></li>
+        <li><a href="https://codeforces.com/profile/AANYA1407" target="_blank">Codeforces</a></li>
+        <li><a href="https://www.geeksforgeeks.org/profile/aanya145uk5" target="_blank">GeeksforGeeks</a></li>
+    </ul>
+    </section>
+
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Let's connect! Reach out via email, LinkedIn, or GitHub.</p>
+    <p>Email: <a href="mailto:aanya1407.jain@gmail.com">aanya1407.jain@gmail.com</a></p>
+    <p>Phone: <a href="tel:+918989140907">8989140907</a></p>
+    <p>
+      <a href="https://linkedin.com/in/aanya-jain-23546133b" target="_blank">LinkedIn</a> | 
+      <a href="https://github.com/aanya1407jain" target="_blank">GitHub</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 Aanya Jain | Built with ❤️
+  </footer>
+
+</body>
+</html>
+
